@@ -1,6 +1,14 @@
-import React from 'react';
-import Teste from './Teste';
-import EstiloGlobal from './Styles';
+import Projetos from './containers/Projetos';
+import Sidebar from './containers/Sidebar';
+import Sobre from './containers/Sobre';
+import EstiloGlobal, {Container} from './Styles';
+
+
+
+
+
+
+
 
 function App() {
 
@@ -9,7 +17,17 @@ function App() {
     <>
 
     <EstiloGlobal />
-    <Teste />
+    <Container>
+
+    <Sidebar />
+    <main>
+      <Sobre />
+      <Projetos />
+    </main>
+
+    </Container>
+
+
     </>
   );
 }
